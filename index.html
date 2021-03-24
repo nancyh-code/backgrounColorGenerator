@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Gradient Background</title>
+</head>
+<body>
+  <body class="start-background">
+    <div>
+      <h1 class="title">Background Gradient Color Generator</h1>
+    </div>
+    <hr>
+
+    <!-- direction election using Unicode Hex Character Code-->
+    <div>
+      <h2>Choose gradient direction</h2>
+      <select name="direction" id="direction-select">
+        <option value="top">&#x2191</option>
+        <option value="right top">&#x2197</option>
+        <option value="right">&#x2192</option>
+        <option value="right bottom">&#x2198</option>
+        <option value="bottom">&#x2193</option>
+        <option value="left bottom">&#x2199</option>
+        <option value="left">&#x2190</option>
+      </select>
+    </div>
+
+    <!--color selection-->
+    <div class="columns">
+      <div class="inside-column">
+        <h2>Choose colors</h2>
+        <div class="colorName">
+          <label for="color1" id="label1">#8c24ef</label>
+          <input type="color" class="buttonColor" id="color1" value="#8c24ef">
+        </div>
+        <div class="colorName">
+          <label for="color2" id="label2">#a941b7</label>
+          <input type="color" class="buttonColor" id="color2" value="#a941b7">
+        </div>
+      </div>
+      <div class="inside-column">
+        <div>
+        <!--random button-->
+          <div>
+            <button id="random" class="random-btn">Random colors</button>
+          </div>
+        <!--generate button-->
+          <div>
+            <button id="buttonGen" class="buttonGen">Generate it!</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!--code generate en css format-->  
+        <div>
+          <p id="code">
+          <!--empty by default-->
+          </p>
+         </div>
+      </div>
+      </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</body>
+</html>
